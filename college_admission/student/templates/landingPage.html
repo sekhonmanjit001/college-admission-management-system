@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body,
+        html {
+            font-family: Roboto, sans-serif, arial;
+            background: #f0f3fa;
+        }
+
+        .width-100 {
+            width: 100%;
+            float: left;
+        }
+
+        .container {
+            width: 1500px;
+            margin: 0px auto;
+        }
+
+        .top-header {
+            background-color: #2196f3;
+            padding: 5px 0px;
+            border-bottom: 1px solid #3131315e;
+        }
+
+        .news-list {
+            background: black;
+            color: white;
+            padding: 6px;
+            font-size: 20px;
+        }
+
+        .headquote {
+            font-size: 18px;
+            color: black;
+            width: 80%;
+
+        }
+
+        #photo {
+            border: 3px solid black;
+            border-radius: 50% 50%;
+        }
+
+        .header-menu {
+            position: relative;
+            box-shadow: 0px 2px 5px 0px #00000036;
+        }
+
+        .logo {
+            width: 200px;
+            float: left;
+        }
+
+        .main-menu {
+            list-style: none;
+            float: right;
+            margin-top: 20px;
+            background-color: #2196f3;
+            padding: 1px 4px;
+
+        }
+
+        .main-menu a {
+            font-weight: 500;
+            color: #3a3a3a;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .main-menu li {
+            float: left;
+            padding: 12px 15px;
+            background-color: white;
+            margin: 10px 5px;
+
+        }
+
+        .slider-width {
+            width: 100%;
+            height: 550px;
+        }
+
+        .margin-top-50 {
+            margin-top: 50px;
+
+        }
+
+        .width-33 {
+            width: 33%;
+            float: left; 
+
+        }
+
+        .latest-news {
+            margin-left: 10px;
+            margin-right: 10px;
+            background: #fff;
+            padding: 20px;
+            height: 350px;
+            margin-bottom: 30px;
+
+        }
+
+        .heading-sect {
+            /* width: 25%; */
+            float: left;
+            border-bottom: 1px solid black;
+            padding-bottom: 0px;
+            margin: 0px;
+            border: 2px solid black;
+            padding-top: 15px;
+            padding-left: 15px;
+            background: #2196f3;
+            color: white;
+        }
+
+        .head-title {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 600;
+
+            padding-bottom: 5px;
+
+        }
+
+        .latest-news-ul {
+            padding: 0px;
+            list-style: none;
+            line-height: 40px;
+
+        }
+
+        .event-list {
+            margin-left: 10px;
+            margin-right: 10px;
+            background: #fff;
+            padding: 20px;
+            height: 350px;
+            margin-bottom: 30px;
+
+
+        }
+
+        .upcoming-event-list {
+            padding: 0px;
+            list-style: none;
+
+
+        }
+
+        .upcoming-event-list li {
+            width: 25%;
+            margin-bottom: 15px;
+
+
+        }
+
+        .event-date {
+            background: white;
+            width: 300px;
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            padding: 8px;
+            margin-right: 10px;
+            display: flex;
+        }
+
+        .notice-board {
+            margin-left: 10px;
+            margin-right: 10px;
+            background: white;
+            padding: 20px;
+            height: 500px;
+            margin-bottom: 30px;
+
+        }
+
+        .notice-board-list {
+            padding: 0px;
+            list-style: none;
+            line-height: 40px;
+        }
+
+        .notice-board-list li {
+            width: 100%;
+            float: left;
+            margin-bottom: 15px;
+
+        }
+
+        .our-principal {
+            margin-left: 10px;
+            margin-right: 10px;
+            background: #fff;
+            padding: 20px;
+            height: 0px;
+            margin-bottom: 30px;
+        }
+
+        .useful-info-ul {
+            list-style: none;
+            margin-top: 100px;
+
+        }
+
+        .useful-info-ul li {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #2196f3;
+            padding-bottom: 15px;
+
+        }
+
+        .useful-info-ul a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="width-100 top header">
+        <div class="container">
+            <div class="width-100">
+                <b class="news-list">NEWS :</b>
+                <marquee class="headquote">My college: Intelligence plus curisoity-that is the root of true education
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="width-100 header-menu">
+    </div class="container">
+    <div class="logo"> </div>
+    <img id="photo" src="{% static 'student/logo.jpg'%}" width="250" height="200" alt="sample image">
+    <ul class="main-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Notice board</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="width-100">
+        <img class="slider-width" src="{% static 'student/college.jpg'%}" width="100%" height="550px">
+    </div>
+    <div class="width-100 margin-top-50">
+        <div class="container">
+            <div class="width-33">
+                <div class="latest-news">
+                    <div class="heading-sect">
+                        <h3 class="head-title">Latest News</h3>
+                    </div>
+                    <marquee direction="up">
+                        <ul class="latest-news-ul">
+                            <li>30 mar 2024 Ph D merit list Part 01_16 feb 2024</li>
+                            <li>29 mar 2024 Ph D merit list Part 02_16 feb 2024</li>
+                            <li>30 mar 2024 Ph D merit list Part 01_16 2024</li>
+                            <li>30 mar 2024 Academic calender session 2023-24</li>
+                            <li>30 mar 2024 Ph D merit list Part 02_16 2024</li>
+                            <li>17 mar 2024 consolidate academic calender</li>
+                            <li>16 feb 2024 Ph D merit list Part 02_16 2024</li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+            <div class="width-33">
+                <div class="event-list">
+                    <div class="heading-sect">
+                        <h3 class="head-title">Upcoming Events</h3>
+                    </div>
+                    <div>
+
+                        <ul class="upcoming-event-list">
+                            <li><span class="event-date">29 <br> April<span></span> Seminar is conducted on BCA
+                                    courses.</span></li>
+                            <li><span class="event-date">30 <br> April<span></span> Seminar is conducted on B.com
+                                    courses.</span></li>
+                            <li><span class="event-date">2 <br> March<span></span> Conducted its 2nd convocation
+                                    ceremony.</span></li>
+                            <li><span class="event-date">5 <br> April<span></span> Seminar is conducted on BCA
+                                    courses.</span></li>
+                            <li><span class="event-date">29 <br> April<span></span> Seminar is conducted on BA
+                                    courses.</span></li>
+                            <li><span class="event-date">29 <br> April<span></span> Annual meeting for batch of BBA.</span>
+                            </li>
+                            <li><span class="event-date">29 <br> April<span></span> Seminar is conducted on BCA
+                                    courses.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="width-33">
+                <div class="notice-board">
+                    <div class="heading-sect">
+                        <h3 class="head-title">Notice-board</h3>
+                    </div>
+                    <ul class="notice-board-list">
+                        <li> Participation in Climate correction Day (CCD) challenge for mission Life </li>
+                        <li> West zone Inter University Table Teniss (man) Tournament 2025-26 </li>
+                        <li> PHD Registration Form for selected candidates </li>
+                        <li> List of Activities organised under TEOIP-III </li>
+                        <li> Documents for empanellment of vendor for a class contyactor </li>
+                        <li> Participation in Climate correction Day (CCD) challenge for mission Life </li>
+                        <li> School of Architecture college level counselling 2025-26 </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-100 ">
+                <div class="container">
+                    <div class="width-33">
+                        <div class="our-principal">
+                            <div class="heading-sect">
+                                <h3 class="head-title">Useful Information</h3>
+                            </div>
+                        </div>
+                        <ul class="useful-info-ul">
+                            <li><a href="#">Online Services</a></li>
+                            <li><a href="#">Online Result</a></li>
+                            <li><a href="#">Exam Time Table</a></li>
+                            <li><a href="#">Tenders</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
