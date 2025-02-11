@@ -54,6 +54,13 @@
             border-radius: 50% 50%;
         }
 
+        .marquee-image{
+            height: 30px;
+            width: 40px;
+            
+        }
+        
+
         .header-menu {
             position: relative;
             box-shadow: 0px 2px 5px 0px #00000036;
@@ -100,7 +107,7 @@
 
         .width-33 {
             width: 33%;
-            float: left; 
+            float: left;
 
         }
 
@@ -115,20 +122,20 @@
         }
 
         .heading-sect {
-            /* width: 25%; */
+            width: 100%;
             float: left;
             border-bottom: 1px solid black;
-            padding-bottom: 0px;
-            margin: 0px;
+            padding-bottom: 15px;
+            /* margin: 0px; */
             border: 2px solid black;
             padding-top: 15px;
-            padding-left: 15px;
+            /* padding-left: 15px; */
             background: #2196f3;
             color: white;
         }
 
         .head-title {
-            margin: 0px;
+            margin: 0px 10px;
             padding: 0px;
             font-size: 16px;
             font-weight: 600;
@@ -163,7 +170,7 @@
         }
 
         .upcoming-event-list li {
-            width: 25%;
+            /* width: 25%; */
             margin-bottom: 15px;
 
 
@@ -171,22 +178,28 @@
 
         .event-date {
             background: white;
-            width: 300px;
+            width: 100%;
             float: left;
             text-align: center;
             font-size: 14px;
             color: black;
-            padding: 8px;
+            padding: 5px;
             margin-right: 10px;
             display: flex;
         }
 
+        .color-dodger-blue{
+            background-color:#2196f3;
+            color:black;
+            
+
+        }
         .notice-board {
             margin-left: 10px;
             margin-right: 10px;
             background: white;
             padding: 20px;
-            height: 500px;
+            height: 350px;
             margin-bottom: 30px;
 
         }
@@ -194,7 +207,7 @@
         .notice-board-list {
             padding: 0px;
             list-style: none;
-            line-height: 40px;
+            line-height: 20px;
         }
 
         .notice-board-list li {
@@ -203,26 +216,27 @@
             margin-bottom: 15px;
 
         }
-
-        .our-principal {
+        .our-principal{
             margin-left: 10px;
             margin-right: 10px;
-            background: #fff;
+            background: white;
             padding: 20px;
-            height: 0px;
+            height: 350px;
             margin-bottom: 30px;
+
         }
+        
 
         .useful-info-ul {
             list-style: none;
             margin-top: 100px;
-
         }
 
         .useful-info-ul li {
             margin-bottom: 40px;
             border-bottom: 2px solid #2196f3;
             padding-bottom: 15px;
+            
 
         }
 
@@ -231,6 +245,7 @@
             color: black;
             font-weight: bold;
         }
+        
     </style>
 </head>
 
@@ -271,13 +286,13 @@
                     </div>
                     <marquee direction="up">
                         <ul class="latest-news-ul">
-                            <li>30 mar 2024 Ph D merit list Part 01_16 feb 2024</li>
-                            <li>29 mar 2024 Ph D merit list Part 02_16 feb 2024</li>
-                            <li>30 mar 2024 Ph D merit list Part 01_16 2024</li>
-                            <li>30 mar 2024 Academic calender session 2023-24</li>
-                            <li>30 mar 2024 Ph D merit list Part 02_16 2024</li>
-                            <li>17 mar 2024 consolidate academic calender</li>
-                            <li>16 feb 2024 Ph D merit list Part 02_16 2024</li>
+                            <li>30 mar 2024 Ph D merit list Part 01_16 feb 2024 <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li>
+                            <li>29 mar 2024 Ph D merit list Part 02_16 feb 2024 <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li>
+                            <li>30 mar 2024 Ph D merit list Part 01_16 2024   <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li>   
+                            <li>29 April 2025 Academic calender session 2025-26  <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li>                    
+                            <li>30 mar 2024 Ph D merit list Part 02_16 2024  <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li> 
+                            <li>17 mar 2024 consolidate academic calender  <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li> 
+                            <li>16 feb 2024 Ph D merit list Part 02_16 2024  <img class="marquee-image" src="{% static 'student\icons8-new-stamp-50.png' %}" alt=""></li> 
                         </ul>
                     </marquee>
                 </div>
@@ -288,21 +303,72 @@
                         <h3 class="head-title">Upcoming Events</h3>
                     </div>
                     <div>
-
-                        <ul class="upcoming-event-list">
-                            <li><span class="event-date">29 <br> April<span></span> Seminar is conducted on BCA
-                                    courses.</span></li>
-                            <li><span class="event-date">30 <br> April<span></span> Seminar is conducted on B.com
-                                    courses.</span></li>
-                            <li><span class="event-date">2 <br> March<span></span> Conducted its 2nd convocation
-                                    ceremony.</span></li>
-                            <li><span class="event-date">5 <br> April<span></span> Seminar is conducted on BCA
-                                    courses.</span></li>
-                            <li><span class="event-date">29 <br> April<span></span> Seminar is conducted on BA
-                                    courses.</span></li>
-                            <li><span class="event-date">29 <br> April<span></span> Annual meeting for batch of BBA.</span>
+                        <ul class=  "upcoming-event-list">
+                            <li>
+                                <span class="event-date">
+                                    <span class="color-dodger-blue">29 <br> 
+                                        April</span>
+                                    <span></span> 
+                                    Seminar is conducted on BCA
+                                    courses.
+                                </span>
                             </li>
-                            <li><span class="event-date">29 <br> April<span></span> Seminar is conducted on BCA
+                            <li>
+                                <span class="event-date">
+                                    <span class="color-dodger-blue">
+                                        30 <br> 
+                                        April
+                                    </span>
+                                    
+                                    <span></span> 
+                                    Seminar is conducted on B.com
+                                    courses.
+                                </span>
+                            </li>
+                            <li>
+                                <span class="event-date">
+                                <span class="color-dodger-blue">
+                                    2 <br>
+                                     June
+                                    </span>
+                                <span></span>
+                                 Conducted its 2nd convocation
+                                    ceremony.
+                                </span>
+                            </li>
+                            <li>
+                                <span class="event-date">
+                                    <span class="color-dodger-blue">
+                                    5 <br>
+                                    June
+                                    
+                                </span>
+                                <span></span>
+                                 Seminar is conducted on BCA
+                                    courses.</span>
+                                </li>
+                            <li>
+                                <span class="event-date">
+                                    <span class="color-dodger-blue">
+                                    29 <br> June
+                                </span>
+                                <span></span> Seminar is conducted on BA
+                                    courses.</span></li>
+                            <l>
+                                <span class="event-date">
+                                    
+                                    <span class="color-dodger-blue">
+                                    29 <br> April
+                                    </span>
+                                    <span></span> Annual meeting for batch of
+                                    BBA.</span>
+                            </li>
+                            <li>
+                                <span class="event-date">
+                                    <span class="color-dodger-blue">
+                                    29 <br> April
+                                    </span>
+                                    <span></span> Seminar is conducted on BCA
                                     courses.</span></li>
                         </ul>
                     </div>
@@ -314,7 +380,7 @@
                         <h3 class="head-title">Notice-board</h3>
                     </div>
                     <ul class="notice-board-list">
-                        <li> Participation in Climate correction Day (CCD) challenge for mission Life </li>
+                        <li> Participation in Climate correction Day (CCD) challenge for mission Life.</li>
                         <li> West zone Inter University Table Teniss (man) Tournament 2025-26 </li>
                         <li> PHD Registration Form for selected candidates </li>
                         <li> List of Activities organised under TEOIP-III </li>
@@ -331,15 +397,30 @@
                             <div class="heading-sect">
                                 <h3 class="head-title">Useful Information</h3>
                             </div>
-                        </div>
+                        
+            </div>
                         <ul class="useful-info-ul">
-                            <li><a href="#">Online Services</a></li>
-                            <li><a href="#">Online Result</a></li>
-                            <li><a href="#">Exam Time Table</a></li>
-                            <li><a href="#">Tenders</a></li>
+                            <li><a href="#">Online Services</a><img class="marquee-image " src="{% static 'student\online-support_4840702.png' %}" alt=""></li>
+                            <li><a href="#">Online Result</a><img class="marquee-image " src="{% static 'student\report_3263111.png' %}" alt=""></li>
+                            <li><a href="#">Exam Time Table</a><img class="marquee-image " src="{% static 'student\schedule_7236139.png' %}" alt=""></li>
+                            <li><a href="#">Tenders</a><img class="marquee-image " src="{% static 'student\tender.webp' %}" alt=""></li>
                         </ul>
                     </div>
                 </div>
+                   <div class="width-33">
+                        <div class="about-us">
+                            <div class="heading-sect">
+                                <h3 class="head-title">Hon'ble Governor of Amritsar</h3>
+                            </div>
+                            <div class="width-100 gov-sec-style">
+                            <div class="widht-40">
+                                <img class="marquee-image " src="{% static 'student\governor.jpg' %}" alt=""></li>
+                            <div class="widht-60">
+                            <p class="governor-name"Dr.Sunil khanna
+                            </div>
+                            </div>
+                            </div>
+                        </div>
             </div>
 
         </div>
