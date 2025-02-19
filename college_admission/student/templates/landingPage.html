@@ -29,11 +29,10 @@
             width: 1500px;
             margin: 0px auto;
         }
-        .college-name{
+
+        .college-name {
             float: right;
             font-size: 60px;
-            
-
         }
 
         .top-header {
@@ -81,7 +80,7 @@
         .main-menu {
             list-style: none;
             float: right;
-            margin-top: 20px;
+            margin-bottom: 20px;
             background-color: #2196f3;
             padding: 1px 4px;
 
@@ -335,7 +334,8 @@
             float: left;
             margin: 35px 0px;
         }
-        .margin-1{
+
+        .margin-1 {
             margin: 3px;
             height: 100px;
             width: 100px;
@@ -363,8 +363,8 @@
             object-fit: cover;
 
         }
-        
-    
+
+
 
         .recruiter-head-style {
             font-size: 33px;
@@ -395,66 +395,81 @@
             margin-bottom: 10px;
         }
 
-        .quiklink-menu {
+        .quicklink-menu {
             list-style: none;
             padding-left: 10px;
-            
+
         }
 
-        .quicklink-memu li a {
+        .quicklink-menu li a {
             color: black;
             line-height: 2.5;
             font-size: 15px;
             text-decoration: none;
         }
-        .get-in-touch{
+
+        .get-in-touch {
             list-style: none;
             padding-left: 10px;
         }
-        .get-in-touch li i{
-          color: red;
-          font-size: 20px;
+
+        .get-in-touch li i {
+            color: red;
+            font-size: 20px;
         }
-        .get-in-touch li{
-            color: yellow;
+
+        .get-in-touch li {
+            color:#fff;
             line-height: 2.5;
             font-size: 15px;
         }
-        .footer-e-mail{
+
+        .footer-e-mail {
             font-size: 15px;
             font-weight: bold;
             color: #fff;
             text-decoration: none;
         }
-        .footer-website{
-            font-size:12px;
+
+        .footer-website {
+            font-size: 12px;
             font-weight: bold;
             color: #fff;
             text-decoration: none;
         }
-        .social-media{
-             list-style: none;
-             margin-top: 10px;
+
+        .social-media {
+            list-style: none;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 10rem;
 
         }
-        .socail-media li{
-              float:left;
-              padding: 0px 8px;
+
+        .socail-media li {
+            float: left;
+            padding: 0px 8px;
         }
-        .social-media li a img{
-               width: 30px;
-            
+
+        .social-media li a img {
+            width: 30px;
+
         }
-        .footer2-bacbor{
-                background:rgb(188, 234, 252);
-                padding: 10px 0px;
-                border-top: 1px solid black;
+
+        .footer2-bacbor {
+            background: rgb(188, 234, 252);
+            padding: 10px 0px;
+            border-top: 1px solid black;
         }
-        .footer2-content{
-                  font-size: 14px;
-                  color: black;
-                  text-align: center;
+
+        .footer2-content {
+            font-size: 14px;
+            color: black;
+            text-align: center;
         }
+
+        
     </style>
 </head>
 
@@ -481,8 +496,8 @@
         <li><a href="#">Academics</a></li>
         <li><a href="#">Admission</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Notice board</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="dashboard"> Dashboard</a></li>
+        <li><a href="register">Register</a></li>
     </ul>
     </div>
     </div>
@@ -650,22 +665,23 @@
                                 <h3 class="head-title">Hon'ble Governor </h3>
                             </div>
                             <div class="content-principal"></div>
-                            <div class="width-100 gov-sec-style">
-                                <div class="width-100">
+                            <div class="width-100 ">
+                                <div class="width-100 gov-sec-style">
                                     <img class="governor-img " src="{% static 'student\governor.jpg' %}" alt=""></li>
                                     <div class="governor-details">
                                         <p class="governor-name">Dr.Sunil khanna</p>
                                         <p class="governor-designation">Principal, My college</p>
                                     </div>
                                 </div>
-                                    
-                                <div class="width-100">
-                                    <img class="governor-img " src="{% static 'student\sanjiv-mehta.jpeg' %}" alt=""></li>
+
+                                <div class="width-100 ">
+                                    <img class="governor-img " src="{% static 'student\sanjiv-mehta.jpeg' %}" alt="">
+                                    </li>
                                     <div class="governor-details">
                                         <p class="governor-name">Prof.Sanjiv Mehta</p>
                                         <p class="governor-designation">Hon'ble Governor</p>
                                     </div>
-                            
+
                                 </div>
                             </div>
                         </div>
@@ -711,14 +727,14 @@
                                     alt=""></li>
                             </div>
                             <div class="width-25  "> <img class="gallery-img" src="{% static 'student\ground.jpeg' %}"
-                                alt=""></li>
-                        </div>
-                        <div class="width-25  "> <img class="gallery-img" src="{% static 'student\lab.jpeg' %}"
-                            alt=""></li>
-                    </div>
-                    <div class="width-25  "> <img class="gallery-img" src="{% static 'student\photo.jpg' %}"
-                        alt=""></li>
-                </div>
+                                    alt=""></li>
+                            </div>
+                            <div class="width-25  "> <img class="gallery-img" src="{% static 'student\lab.jpeg' %}"
+                                    alt=""></li>
+                            </div>
+                            <div class="width-25  "> <img class="gallery-img" src="{% static 'student\photo.jpg' %}"
+                                    alt=""></li>
+                            </div>
                         </div>
                     </div>
                     <div class="width-100 margin-top-50">
@@ -728,7 +744,7 @@
                             <marquee class="recruiter-marquee">
                                 <img src="{% static 'student\flipkart-logo.jpg' %}" alt=""></li>
                                 <img src="{% static 'student\Adobe.png' %}" alt=""></li>
-                            
+
                                 <img src="{% static 'student\amazon.webp' %}" alt=""></li>
                                 <img src="{% static 'student\Deloitte.png' %}" alt=""></li>
                                 <img src="{% static 'student\samsung.jpg' %}" alt=""></li>
@@ -770,16 +786,19 @@
                             <div class="width-25">
                                 <h2 class="quicklink-heading">GET IN TOUCH</h2>
                                 <ul class="quicklink-menu">
-                                    <li><i class="fa fa-envelope"></i> E-MAIL :<a href="#" class="footer-e-mail">info@dezven.com</a></li>
+                                    <li><i class="fa fa-envelope"></i> E-MAIL :<a href="#"
+                                            class="footer-e-mail">info@dezven.com</a></li>
                                     <li><i class="fa fa-headphones"></i> WHATS-APP : +91-123 456 789</a></li>
                                     <li><i class="fa fa-fax"></i> CONTACT NO : +91 -(123)-4567890</a></li>
-                                    <li><i class="fa fa-globe"></i> WEBSITE :<a href="#" class="footer-website">https://www.dezven.com </a></li>
+                                    <li><i class="fa fa-globe"></i> WEBSITE :<a href="#"
+                                            class="footer-website">https://www.dezven.com </a></li>
                                 </ul>
                                 <ul class="social-media">
                                     <li><a href="#"><img src="{% static 'student\facebook.png' %}" alt=""></li></a></li>
                                     <li><a href="#"><img src="{% static 'student\twitter.png' %}" alt=""></li></a></li>
                                     <li><a href="#"><img src="{% static 'student\linkedin.png' %}" alt=""></li></a></li>
-                                    <li><a href="#"><img src="{% static 'student\instagram.png' %}" alt=""></li></a></li>
+                                    <li><a href="#"><img src="{% static 'student\instagram.png' %}" alt=""></li></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

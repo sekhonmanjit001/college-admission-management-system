@@ -5,3 +5,5 @@ def view_name (request):
 # Create your views here.
 def signUp_register(request):
     return render(request,"Registration_student.html")
+def dashboard(request):
+    return render(request,"Dashboard_page.html")
