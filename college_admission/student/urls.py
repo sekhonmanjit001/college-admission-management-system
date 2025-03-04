@@ -5,7 +5,12 @@ urlpatterns = [
     path('', views.view_name),
     path('register', views.signUp_register),
      path('dashboard', views.dashboard),
+     path('form', views.form_first),
+     path('conformation', views.conformation),
+     path('api/register', views.register),
+     path('api/login', views.login_view),
 ]
+
 
 
 

@@ -4,194 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css";
-    <title></title>
-    <style>
-        *{
-            margin:0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins',sans-serif;
-        }
-        body{
-            overflow-x: hidden;
-        }
-        .container{
-            position: relative;
-            width: 100%;
-        }
-        .sidebar{
-            position: fixed;
-            width: 300px;
-            height: 100%;
-            background: linear-gradient(70deg,#fff, #2196f3, #fff);
-            overflow-x: hidden;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            z-index: 0;
-        }
-        .sidebar ul li{
-            width: 100%;
-            list-style: none;
-        }
-        .sidebar ul li:hover{
-             background-color:#fff;
-        }
-        .sidebar ul li:first-child{
-            line-height: 60px;
-            margin-bottom: 20px;
-            font-weight: 600;
-            border-bottom: 2px solid black;
-        }
-        .sidebar ul li:first-child:hover{
-            background: none;
-        }
-        .sidebar ul li a{
-            width: 100%;
-            text-decoration: none;
-            color: black;
-            height: 60px;
-            
-            align-items: center;
-        }
-        .sidebar ul li a i{
-            min-width:60px;
-            font-size: 24px;
-            text-align: center;
-        }
-        .sidebar .title{
-            padding: 0 10px;
-            font-size: 20px;
-        }
-        .top-bar{
-             position: fixed;
-             height: 60px;
-             width: calc(100% - 300px);
-             background:whitesmoke;
-             grid-template-columns: 10fr 0.4fr 1fr;
-             grid-gap:5px;
-             align-items: center;
-             color: black;
-             padding: 0 20px;
-             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-             z-index: 1;
-        }
-        .main{
-            position: absolute;
-            width: calc(100% - 300px);
-            min-height: 100vh;
-            left: 300px;
-            background:rgb(246, 244, 244);
-        }
-        .top-bar .search{
-            position: relative;
-           max-width: 400px;
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        }
-        .search input{
-            width: 100%;
-            min-width: 128px;
-            height: 40px;
-            padding: 0 40px;
-            font-size: 16px;
-            outline: none;
-            border: none;
-            background:white;
-        }
-        .search i{
-            position: absolute;
-            right: 15px;
-            top: 10px;
-            cursor: pointer;
-        }
-    
-        
-        .user{
-            position: relative;
-            top: 128px;
-            width: 500px;
-            height: 500px;
-        }
-        img{
-            position: absolute;
-            width: 10%;
-            height: 10%;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-        
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'student\dashboard.css' %}">
 </head>
 <body>
     <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>URBAN COLLEGE</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" Placeholder="search here">
+                <label for="search"> <i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img class="slider" src="{% static 'student/user.jpeg'%}">
+            </div>
+        </div>
         <div class="sidebar">
             <ul>
                 <li>
                     <a href="#">
-                        <i class="college name"></i>
-                        <div class="title">URBAN COLLEGE</div>
-                    </a>
-                </li>
-                <li> 
-                    <a href="#">
-                        <i class="home"></i>
-                        <div class="title">Dashboard</div>
-                        
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="home 1"></i>
-                        <div class="title">Available courses</div>
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Students</div>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="home 2"></i>
-                        <div class="title">Application</div>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>Teachers</div>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="home 3"></i>
-                        <div class="title">Syllabus</div>
-                </li>
-                <li> 
-                    <a href="#">
-                        <i class="home 4"></i>
-                        <div class="title">Result</div>
+                        <i class="fas fa-users"></i>
+                        <div>Employees</div>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="home 5"></i>
-                        <div class="title">Fees</div>
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Analytics</div>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="home 6"></i>
-                        <div class="title">Setting</div>
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Earnings</div>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="home 7"></i>
-                        <div class="title">Help</div>
-                        </a>
+                        <i class="fas fa-cog"></i>
+                        <div>Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div>Help</div>
+                    </a>
                 </li>
             </ul>
         </div>
-        <div class="main">
-            <div class="top-bar">
-                <div class="search">
-                    <input type="text" name="search" placeholder="search here">
-                    <label for="search"><i class=""></i></label>
+            <div class="main">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">1480</div>
+                            <div class="card-name">Students</div>
+                        </div>
+                        <div class="icon-box">
+                          <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">48</div>
+                            <div class="card-name">Teachers</div>
+                        </div>
+                        <div class="icon-box">
+                          <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">65</div>
+                            <div class="card-name">Employees</div>
+                        </div>
+                        <div class="icon-box">
+                          <i class="fas fa-users"></i>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">$5500</div>
+                            <div class="card-name">Earnings</div>
+                        </div>
+                        <div class="icon-box">
+                          <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div> 
                 </div>
-                <!-- <i class="bell"></i>    -->
-                <div class="user">
-                    <img class="" src="{% static 'student/man.jpg'%}"> 
+                <div class="charts">
+                 <div class="chart"> 
+                    <h2>Earning (past 12 months)</h2>
+                    <canvas id="lineChart" ></canvas>
 
-                </div>
+                 </div>
+                 <div class="chart" id="doughnut-chart">
+                    <h2>Employees</h2>
+                    <canvas id="doughnut" ></canvas>
+                 </div>
             </div>
         </div>
     </div>
-    
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="{% static 'student\dashboard.js' %}"></script>
+    <script src="{% static 'student\dashboard2.js' %}"></script> 
+</body>  
 </html>
+
+
+
+
+
+
+
