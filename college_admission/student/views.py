@@ -16,6 +16,12 @@ def form_first(request):
     return render(request,"Form.html")
 def conformation (request):
     return render(request,"conformation.html")
+def courses (request):
+    return render(request,"courses.html")
+def studentslist(request):
+    return render(request,"studentslist.html")
+def studentdashboard(request):
+    return render(request,"studentdashboard.html")
 
 
 

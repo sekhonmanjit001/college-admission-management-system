@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'student\dashboard.css' %}">
+</head>
+<style>
+     .title {
+        font-size: 40px;
+        text-align: center;
+
+        text-shadow: 3px 5px 5px rgb(86, 76, 76);
+    }
+
+    .activity .activity-data {
+        display: flex;
+
+        justify-content: space-around;
+    }
+
+    .activity-data .data {
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin: 0 100px; */
+
+    }
+
+    .activity-data .data-title {
+        font-size: 28px;
+        font-weight: 500;
+        text-shadow: 3px 5px 5px rgb(86, 76, 76);
+        margin-top: 20px;
+
+    }
+
+    .activity-data .data .data-list {
+        font-size: 26px;
+        font-weight: 400;
+        margin-top: 20px;
+        width: 100%;
+        white-space: nowrap;
+        background:white;
+    }
+
+  
+
+    
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>URBAN COLLEGE</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" Placeholder="search here">
+                <label for="search"> <i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img class="slider" src="{% static 'student/user.jpeg'%}">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Students</div>
+                    </a>
+                </li>
+                <li>
+                <a href="#">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>Results</div>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+                
+                    <div class="activity">
+                        <div class="title">
+                            <span class="text">Recent Courses</span>
+                        </div>
+                        <div class="activity-data">
+                            <div class="data name">
+                                <span class="data-title">Name</span>
+                
+                            </div>
+                
+                            <div class="data email">
+                                <span class="data-title">Email</span>
+                
+                            </div>
+                            <div class="data phonenumber">
+                                <span class="data-title">Phone number</span>
+                
+                            </div>
+                            <div class="data gender">
+                
+                                <span class="data-title">Gender</span>
+                
+                
+                            </div>
+                
+                        </div>
+                        <div class="activity-data">
+                            <div class="data name">
+                                <span class="data-list">Seerat</span>
+                                <span class="data-list">Sahil</span>
+                                <span class="data-list">Gurnoor</span>
+                                <span class="data-list">Ramanpreet</span>
+                                <span class="data-list">Jashan</span>
+                                <span class="data-list">Manpreet</span>
+                                <span class="data-list">Rajbir</span>
+                                <span class="data-list">Yugraj</span>
+                                <span class="data-list">Kirat</span>
+                                <span class="data-list">Simranpreet</span>
+                            </div>
+                
+                            <div class="data email">
+                                <span class="data-list">Seerat@gmail.com</span>
+                                <span class="data-list">Sahil@gmail.com</span>
+                                <span class="data-list">Gurnoor@gmail.com</span>
+                                <span class="data-list">Raman@gmail.com</span>
+                                <span class="data-list">Jashan@gmail.com</span>
+                                <span class="data-list">Manpreet@gmail.com</span>
+                                <span class="data-list">Rajbir@gmail.com</span>
+                                <span class="data-list">Yugraj@gmail.com</span>
+                                <span class="data-list">Kirat@gmail.com</span>
+                                <span class="data-list">Simran@gmail.com</span>
+                            </div>
+                            <div class="data phonenumber">
+                                <span class="data-list">9856432015</span>
+                                <span class="data-list">9764392179</span>
+                                <span class="data-list">7707890433</span>
+                                <span class="data-list">9795483616</span>
+                                <span class="data-list">9129384756</span>
+                                <span class="data-list">9467823409</span>
+                                <span class="data-list">9812305469</span>
+                                <span class="data-list">6879753709</span>
+                                <span class="data-list">5784239087</span>
+                                <span class="data-list">7478065422</span>
+                            </div>
+                            <div class="data Gender">
+                                <span class="data-list">Female</span>
+                                <span class="data-list">Male</span> 
+                                <span class="data-list">Male</span>
+                                <span class="data-list">Female</span>
+                                <span class="data-list">Male</span>
+                                <span class="data-list">Female</span>
+                                <span class="data-list">Male</span>
+                                <span class="data-list">Male</span>
+                                <span class="data-list">Female</span>
+                                <span class="data-list">Female</span>
+                            </div>
+                           
+                        </div>
+                
+                    </div>
+                
+                    </div>
+                </body>
+</html>

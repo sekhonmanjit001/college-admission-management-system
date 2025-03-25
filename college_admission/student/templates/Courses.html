@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .heading{
+            font-size: 50px;
+            text-shadow: 3px 5px 5px #7b838b;
+            text-align: center;
+        }
+        .box {
+            margin: 1rem 0;
+            position: relative;
+            width: calc((100vw / 3) - 30px);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        } 
+
+        .box-container {
+            @include grid(30rem);
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+    
+
+        }
+
+        .image h3{
+            position: absolute;
+            top: 0%; 
+            left: 2%; 
+            /* transform: translate(-50%, -50%); */
+            color: black;
+            background: #fff;
+            
+        }
+        &:hover .image img {
+            transform: scale(1.1rem);
+            
+        }
+        &.hide{
+            display: none;
+        }
+
+        .image {
+            height: 15rem;
+            position: relative;
+        
+            /* display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between; */
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /* border: 2px solid black; */
+         }
+        h3{
+            @include titleText(2rem);
+        
+            
+        }
+        p{
+            padding: 1rem 0;
+            @include graphText(1.6rem);
+         }
+         .icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid black;
+         }
+         span{
+            @include titleText(1.5rem);
+         }
+         i{
+            color: #2196f3;
+            padding-right: .5rem;
+         }
+         
+
+        .content{
+            padding: 2rem;
+            text-align: center;
+            /* border: 2px solid black; */
+
+        
+            
+        }
+        .btn{
+            width: 40%;
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 3rem;
+            font-size: 1.8rem;
+            border: .2rem solid #72b1e4;
+            border-radius: .5rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            color:#72b1e4;
+            cursor:pointer;
+        }
+        .btn span{
+            padding: .7rem 1rem;
+            border-radius: .5rem;
+            background: #72b1e4;
+            color: #fff;
+            margin-left: .5rem;
+        }
+        .btn:hover{
+            background:#72b1e4;
+            color: #fff;
+        }
+        .btn:hover span{
+            color: #72b1e4;
+            background: #fff;
+            margin-left: 1rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section class="courses">
+        <h1 class="heading"> Our Famous Courses</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/engineering.jpg'%}">
+                    <h3>Engineering</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/maths.jpg'%}">
+                    <h3>Mathemetics</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/doctor.webp'%}">
+                    <h3>Doctor</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/dance.jpeg'%}">
+                    <h3>Dancing</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/business.webp'%}">
+                    <h3>Business</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/teacher.jpeg'%}">
+                    <h3>Teaching</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/Developement.jpg'%}">
+                    <h3>Developement</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/design.jpg'%}">
+                    <h3>Designing</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="" src="{% static 'student/science.jpg'%}">
+                    <h3>Science</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, saepe?</p>
+                    <a href="#" class="btn">Read More</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-book"></i>12 modules</span>
+                        <span> <i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+</body>
+
+</html>
