@@ -10,6 +10,7 @@ urlpatterns = [
     path('courses', views.courses),
     path('studentslist', views.studentslist),
     path('studentdashboard', views.studentdashboard),
+    path('result', views.result),
     path('api/register', views.register),
     path('api/login', views.login_view),
 ]

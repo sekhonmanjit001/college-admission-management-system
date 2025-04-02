@@ -22,7 +22,8 @@ def studentslist(request):
     return render(request,"studentslist.html")
 def studentdashboard(request):
     return render(request,"studentdashboard.html")
-
+def result(request):
+    return render(request,"result.html")
 
 
 
